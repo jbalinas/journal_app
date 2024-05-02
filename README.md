@@ -12,18 +12,18 @@ Tell us about what your design vision was.
  - Functionally
     I wanted users to be able to reflect on what they were grateful for that day, as well as what the best part (the highlight!) of their day was
 
-    ![Entry Creation/Editing](/assets/IMG_6373.jpg)
+    ![Entry Creation/Editing](/assets/img1.jpg)
  - Aesthetically
     I wanted a simple and cute UI to make the app feel like an easy resting place for the user's eyes and thoughts, without much to look at.
 
     I wanted a home screen with simple navigation to a new entry or previous entries. 
 
-    ![Home Screen](/assets/IMG_6372.jpg)
+    ![Home Screen](/assets/img2.jpg)
 
  - Data
     Initially I wanted the data to be organized by month and year so users wouldn't have to scroll endlessly for old entries (assuming that in the future, everything wouldn't disappear when I close my emulator), but then I realized I could do something like that maybe for the second part depending on wht the complexity is going to look like.
 
-    ![Idealized Entry Sorting](/assets/IMG_6374.jpg)
+    ![Idealized Entry Sorting](/assets/img3.jpg)
 
 
 Where in your repo can we find the design sketches that you made? 

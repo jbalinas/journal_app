@@ -35,7 +35,7 @@ Above, and in assets/images!
 
 **If your final design changed from your initial sketches please explain what changed and why.**
 
-I realized I didn't feel like doing all of that for the first assignment... Well, that's not right. To be honest, I ran out of time this week playing catch up, and opted for something similar but much simpler. For what it's worth, I'm all caught up now!
+To be honest, I ran out of time this week playing catch up, and opted for something similar but much simpler. For what it's worth, I'm all caught up now!
 
 ## Resources Used
 Cite anything (website or other resource) or anyone that assisted you in creating your solution to this assignment.

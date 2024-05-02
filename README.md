@@ -31,7 +31,7 @@ Tell us about what your design vision was.
 
 **Where in your repo can we find the design sketches that you made?**
 
-Above, and in assets/images!
+Above, and in the assets folder!
 
 **If your final design changed from your initial sketches please explain what changed and why.**
 

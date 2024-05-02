@@ -60,7 +60,7 @@ Can be used to create a modified entry based on existing entry. Keeps the origin
 ### Why Copying the List Is Sufficient
 Each JournalEntry object is immutable. When the list of entries is copied (eg using List.from), references to the immutable JournalEntry objects are being copied, not the objects themselves. Ths maintains entry integrity, so we don't have to worry about mods to the actual data entries that we don't want. We can add/remove entries from the OG list without affecting the copied list because they are separate instances.
 
-### Stuff Ben Asked Us To Think About**
+### Stuff Ben Asked Us To Think About
 **What capabilities does the ensemble of Journal, JournalEntry, and UUIDMaker give us?**
 Gives us a way to manage our collection of entries in a way where the entries we add in are all uniquely identifiable and immutable. We can also keep track of changes to the journal and reversing changes via new versions instead of modding the existing version.
 

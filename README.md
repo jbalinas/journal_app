@@ -12,25 +12,30 @@ Tell us about what your design vision was.
  - Functionally
     I wanted users to be able to reflect on what they were grateful for that day, as well as what the best part (the highlight!) of their day was
 
-    ![Entry Creation/Editing](/assets/IMG_6373.jpg)
+    <img src="assets/img1.png" width="297" height="390" alt="Entry Creation/Editing">
+
  - Aesthetically
     I wanted a simple and cute UI to make the app feel like an easy resting place for the user's eyes and thoughts, without much to look at.
 
     I wanted a home screen with simple navigation to a new entry or previous entries. 
 
-    ![Home Screen](/assets/IMG_6372.jpg)
+    <img src="assets/img2.png" width="297" height="390" alt="Home Screen">
+
 
  - Data
     Initially I wanted the data to be organized by month and year so users wouldn't have to scroll endlessly for old entries (assuming that in the future, everything wouldn't disappear when I close my emulator), but then I realized I could do something like that maybe for the second part depending on wht the complexity is going to look like.
 
-    ![Idealized Entry Sorting](/assets/IMG_6374.jpg)
+    <img src="assets/img3.png" width="297" height="390" alt="Idealized Entry Sorting">
 
 
-Where in your repo can we find the design sketches that you made? 
-Above, and in assets/images!
 
-If your final design changed from your initial sketches please explain what changed and why.
-I realized I didn't feel like doing all of that for the first assignment...
+**Where in your repo can we find the design sketches that you made?**
+
+Above, and in the assets folder!
+
+**If your final design changed from your initial sketches please explain what changed and why.**
+
+To be honest, I ran out of time this week playing catch up, and opted for something similar but much simpler. For what it's worth, I'm all caught up now!
 
 ## Resources Used
 Cite anything (website or other resource) or anyone that assisted you in creating your solution to this assignment.

@@ -111,3 +111,27 @@ How much time (in minutes or hours of active work) did you spend working on this
 What could we do to make this assignment better in the future?
 
 I worked on this assignment for about 8 hours, including reading the spec, reading documentation, searching for documentation and example videos, writing functional code, writing UI code, writing in answers for reflections, and adding in accessibility components. The parts that took the longest were checking for little things that I missed here and there -- Would've been cool to have a checklist of things (reflection questions) at the end to wrap things up.
+
+## Part 2
+
+### Robustness
+**Given how we have implemented this, what are the circumstances under which a user could lose their journal data? What could you do to change the design and implementation of your app to mitigate this risk?**
+
+Some scenarios for potentially losing journal data:
+* Uninstaling the app, or somehow otherwise clearing the app's data (and therefore losing the original encryption key since we need that to decode the encrypted data)
+* Data corruption from bugs in the app, hardware failure, or other things could make the data useless
+
+Some potential mitigation strategies:
+* Make (ideally automatic) backups a thing, either manually exporting it or putting it into cloud storage
+* Create systems for recovering a lost encryption key (user authentication, perhaps)
+
+### Reflection
+
+It was fun learning about encryption for Flutter. It wasn't too difficult to pick up since I have a general understanding of what needs to happen from taking a security class, but I am curious about looking more into Hive and seeing how reasonable it would be to incorporate it into the projects I create for fun.
+
+This assignment -- for the most part -- felt very guided, which I thought was very important for me as someone still very green to Flutter, all the more any fellow students who also haven't touched at all on security yet. I appreciated the clear (read: separated in its own little paragraph as opposed to being introduced nested in an already-dense paragraph) links to documentation, and repeated hyperlinks when referenced again later, such as how the EncryptedBox documentation was.
+
+For me, I would say the hardest part of this assignment was understanding what was expected in terms of accessibility apart from "we expect your app to be accessible, make sure it is". That felt brief and curt. When I think about how to enhance accessibility regarding security, I think there are ways to enhance the UI, such as creating clear, accessible interfaces for data backup/restore with audio descriptions to assist users through the process. However, that seemed a little beyond "above and beyond" for this assignment. Since most of the security operations we implemented here happen in the background (eg encrption), I was honestly stumped on how to make these background processes more accessible in the existing very simple application I made.
+
+### Self Grade
+I would give myself at least a B. I don't prescribe to the idea that A's only belong to above and beyond work -- if you complete what is being asked of you, that should be an A. 

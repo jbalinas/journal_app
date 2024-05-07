@@ -34,13 +34,11 @@ class JournalEntry {
     required this.uuid,
   });
 
-  // Creates a ew entry w/ current date-time
+  // Creates a new entry w/ current date-time
   JournalEntry.newEntry({
-    String gratitudeText = '',
-    String highlightText = '',
-  })  : this.gratitudeText = gratitudeText,
-        this.highlightText = highlightText,
-        createdAt = DateTime.now(),
+    this.gratitudeText = '',
+    this.highlightText = '',
+  })  : createdAt = DateTime.now(),
         updatedAt = DateTime.now(),
         uuid = UUIDMaker.generateUUID();
 

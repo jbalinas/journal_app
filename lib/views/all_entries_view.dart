@@ -37,10 +37,10 @@ class AllEntriesView extends StatelessWidget {
         body: Consumer<JournalProvider>(builder: (context, provider, child) {
           // Used ListView.builder to create and show a scrollable view of all JournalEntries
           return ListView.builder(
-            itemCount: provider.journal.entries.length,
+            itemCount: provider.entries.length,
             itemBuilder: (context, index) {
               return _createListElementForEntry(
-                  context, provider.journal.entries[index]);
+                  context, provider.entries[index]);
             },
           );
         }));

@@ -1,6 +1,6 @@
 import 'package:journal/utils/uuid_maker.dart';
 import 'package:hive/hive.dart';
-// it is so angry
+
 part 'journal_entry.g.dart';
 
 @HiveType(typeId: 0)
@@ -25,21 +25,24 @@ class JournalEntry {
   // Timestamp when entry was created
   final DateTime createdAt;
 
-  // Creates a new journal entry w gratitude and highlight texts
-  factory JournalEntry(
-      {gratitudeText = '',
-      highlightText = '',
-      required DateTime createdAt,
-      required DateTime updatedAt,
-      required UUIDString uuid}) {
-    final when = DateTime.now();
-    return JournalEntry.withTextUUIDUpdatedAtCreatedAt(
-        gratitudeText: gratitudeText,
-        highlightText: highlightText,
-        uuid: UUIDMaker.generateUUID(),
-        updatedAt: when,
-        createdAt: when);
-  }
+  // A journal entry
+  JournalEntry({
+    this.gratitudeText = '',
+    this.highlightText = '',
+    required this.createdAt,
+    required this.updatedAt,
+    required this.uuid,
+  });
+
+  // Creates a ew entry w/ current date-time
+  JournalEntry.newEntry({
+    String gratitudeText = '',
+    String highlightText = '',
+  })  : this.gratitudeText = gratitudeText,
+        this.highlightText = highlightText,
+        createdAt = DateTime.now(),
+        updatedAt = DateTime.now(),
+        uuid = UUIDMaker.generateUUID();
 
   // Initializes a JournalEntry with all the properties
   JournalEntry.withTextUUIDUpdatedAtCreatedAt(
@@ -49,8 +52,8 @@ class JournalEntry {
       required this.updatedAt,
       required this.createdAt});
 
-  // Updates existing JournalEntry with new gratitude or highlight texts
-  JournalEntry.withUpdatedText(JournalEntry entry,
+  // Updates existing JournalEntry with texts/updatedAt timestamp
+  JournalEntry.withUpdates(JournalEntry entry,
       {String newGratitudeText = '', String newHighlightText = ''})
       : uuid = entry.uuid,
         createdAt = entry.createdAt,

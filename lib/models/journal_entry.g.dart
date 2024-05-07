@@ -17,8 +17,8 @@ class JournalEntryAdapter extends TypeAdapter<JournalEntry> {
       for (int i = 0; i < numOfFields; i++) reader.readByte(): reader.read(),
     };
     return JournalEntry(
-      gratitudeText: fields[0] as dynamic,
-      highlightText: fields[1] as dynamic,
+      gratitudeText: fields[0] as String,
+      highlightText: fields[1] as String,
       createdAt: fields[4] as DateTime,
       updatedAt: fields[3] as DateTime,
       uuid: fields[2] as String,

@@ -10,7 +10,7 @@
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>$(AppIdentifierPrefix)340</string>
+		<string>$(AppIdentifierPrefix)cse340</string>
 	</array>
 </dict>
 </plist>

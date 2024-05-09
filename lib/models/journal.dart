@@ -20,12 +20,6 @@ class Journal {
   // Upserts journal using Hive via
   // modifying storage after updating local list
   void upsertEntry(JournalEntry entry) {
-    // var index = _entries.indexWhere((e) => e.uuid == entry.uuid);
-    // if (index == -1) {
-    //   _entries.add(entry);
-    // } else {
-    //   _entries[index] = entry;
-    // }
     _storage.put(entry.uuid, entry);
     _entries = _storage.values.toList();
   }

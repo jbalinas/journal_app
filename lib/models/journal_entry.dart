@@ -51,6 +51,7 @@ class JournalEntry {
       required this.createdAt});
 
   // Updates existing JournalEntry with texts/updatedAt timestamp
+  //  while keeping createdAt timestamp
   JournalEntry.withUpdates(JournalEntry entry,
       {String newGratitudeText = '', String newHighlightText = ''})
       : uuid = entry.uuid,
